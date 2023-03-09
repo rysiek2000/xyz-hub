@@ -137,6 +137,7 @@ public class DynamoClient {
   }
 
   public boolean isLocal() {
-    return Arrays.stream(Region.values()).noneMatch(r -> r.toAWSRegion().getName().equals(arn.getRegion()));
+    return false;
+    //return Arrays.stream(Region.values()).noneMatch(r -> r.toAWSRegion().getName().equals(arn.getRegion()));
   }
 }
